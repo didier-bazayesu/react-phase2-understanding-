@@ -1,10 +1,14 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState,useContext } from "react";
+import HandlePrps from "./HandlePrps";
+import { UserDetails } from "./HandlePrps";
 
 function App() {
+
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+
 
   useEffect(() => {
     // Start timeout
@@ -37,11 +41,16 @@ function App() {
     return () => clearTimeout(timeout);
   }, []);
 
+
+  function handleClick() {
+    alert("user clicked")
+  }
+
   return (
     <div>
       <h1>Data for sample test</h1>
 
-      {isLoading && <p>Page Loading...</p>}
+      {/* {isLoading && <p>Page Loading...</p>}
       {hasError && <p style={{ color: "red" }}>Failed to load data</p>}
 
       {!isLoading && !hasError &&
@@ -51,7 +60,13 @@ function App() {
             <p>Email: {user.email}</p>
           </div>
         ))
-      }
+      } */}
+      
+      <UserDetails.Provider value={{ onClick: handleClick }}>
+         <HandlePrps  />
+
+      </UserDetails.Provider>
+      
     </div>
   );
 }
