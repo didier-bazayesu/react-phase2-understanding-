@@ -1,4 +1,6 @@
+import MyownTyping from "./MyownTyping";
 import SampleFetching from "./SampleFetching";
+import Typing from "./Typing";
 
 
 function App() {
@@ -9,7 +11,9 @@ function App() {
   
   return (
     <>
-       <SampleFetching/>
+       {/* <SampleFetching/> */}
+       {/* <Typing/> */}
+       <MyownTyping/>
     </>
   );
 }
