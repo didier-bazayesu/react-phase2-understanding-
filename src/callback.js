@@ -1,25 +1,18 @@
-// function handleFetching(message , callback){
-//     return callback(message);
-// }
+let account = { balance: 100 };
 
-import { use } from "react";
+function withdraw(amount) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (account.balance >= amount) {
+        account.balance -= amount;
+        resolve(`Withdrawn: $${amount}, Remaining: $${account.balance}`);
+      } else {
+        reject("Insufficient funds");
+      }
+    }, Math.random() * 1000); // network delay
+  });
+}
 
-
-//  function callback(message){
-//     return new Promise((resolve,reject)=>{
-//        message ? resolve(message) : reject("Failed")
-//     })
-// }
-
-// console.log(handleFetching("hello didier", callback));
-
-
-async function userWithTodos(){
- let [users, todos] = await Promise.all([fetch("https://jsonplaceholder.typicode.com/users"),
-    fetch(" https://jsonplaceholder.typicode.com/todos")]);
-
-    return await todos.json();
-
- }
- userWithTodos().then(console.log)
-
+// Two simultaneous withdrawals
+withdraw(80).then(console.log).catch(console.log);
+withdraw(50).then(console.log).catch(console.log);
