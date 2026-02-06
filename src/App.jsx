@@ -6,6 +6,7 @@ import Typing from "./Typing";
 import Incr_decrement from "./Incr_decrement"
 import List from "./List";
 import ListItem from "./ListItem";
+import Searching from "./Searching";
 
 
 function App() {
@@ -18,10 +19,11 @@ function App() {
     <>
    
      {/* <SampleFetching/>  */}
-     <ListItem/>
+     {/* <ListItem/> */}
 
    
       {/* <Incr_decrement/> */}
+    <Searching/>
     </>
   );
 }
