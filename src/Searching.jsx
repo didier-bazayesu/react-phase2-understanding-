@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { func } from 'prop-types';
+
 
 
 function Searching() {
@@ -22,12 +22,13 @@ console.log(dataFetch)
 function renderData(){
   const  response = dataFetch.filter(elem=>{
        const data = elem.name;
+       const name = elem.username
        const search = change;
-       return data.includes(search);
+      return data.toLowerCase().includes(search.toLocaleLowerCase()) || name.toLowerCase().includes(search.toLocaleLowerCase());
 
   });
   return response.map(ele=>{
-    return <ul>
+      return <ul className='handle-each-div' key={ele.id}>
         <li>Id :{ele.id}</li>
         <li>Name:{ele.name}</li>
         <li>Username:{ele.username}</li>
@@ -53,12 +54,12 @@ const dt = renderData();
       
 },[])
   return (
-    <div>
-        <div className='handle-each-div'>
+      <div>
+        <input placeholder='start searching....'onChange={handleSearch} value={change}/>
+        <div >
             {dt}
 
         </div>
-       <input placeholder='start searching....'onChange={handleSearch} value={change}/>
     </div>
   )
 }
