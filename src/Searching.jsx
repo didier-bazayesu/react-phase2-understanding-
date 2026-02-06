@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { func } from 'prop-types';
 
 
 function Searching() {
@@ -17,7 +18,27 @@ async function handleFetching (){
     
 };
 
-// console.log(dataFetch)
+console.log(dataFetch)
+function renderData(){
+  const  response = dataFetch.filter(elem=>{
+       const data = elem.name;
+       const search = change;
+       return data.includes(search);
+
+  });
+  return response.map(ele=>{
+    return <ul>
+        <li>Id :{ele.id}</li>
+        <li>Name:{ele.name}</li>
+        <li>Username:{ele.username}</li>
+
+    </ul>
+  })
+}
+const dt = renderData();
+
+
+//searching specific data
   function  handleSearch(e){
        setchange(e.target.value);
 
@@ -33,7 +54,10 @@ async function handleFetching (){
 },[])
   return (
     <div>
-        <p>{change}</p>
+        <div className='handle-each-div'>
+            {dt}
+
+        </div>
        <input placeholder='start searching....'onChange={handleSearch} value={change}/>
     </div>
   )
