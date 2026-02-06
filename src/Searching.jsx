@@ -6,26 +6,35 @@ function Searching() {
 let[dataFetch,setData] = useState([]);
 let[change,setchange] = useState("")
 async function handleFetching (){
-    const data = await axios.get("https://jsonplaceholder.typicode.com/users");
-    setData(()=> data.data);
+    try{
 
+        const data = await axios.get("https://jsonplaceholder.typicode.com/users");
+        setData(()=> data.data);
+        
+    }catch(error){
+         console.error(error);
+    };
+    
 };
 
-  function  handleSuch(eve){
-       setchange(eve.target.value);
+// console.log(dataFetch)
+  function  handleSearch(e){
+       setchange(e.target.value);
+
       
   }
-  console.log(change)
+
   
   
   
   useEffect(()=>{
       handleFetching();
-      handleSuch();
+      
 },[])
   return (
     <div>
-       <input placeholder='start searching....' onChange={(e)=>handleSuch(e)}/>
+        <p>{change}</p>
+       <input placeholder='start searching....'onChange={handleSearch} value={change}/>
     </div>
   )
 }
