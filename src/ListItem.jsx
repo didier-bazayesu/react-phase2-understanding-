@@ -1,6 +1,7 @@
 import React from 'react'
 import List from './List'
-import 
+
+
 
 function ListItem() {
     const food = {
