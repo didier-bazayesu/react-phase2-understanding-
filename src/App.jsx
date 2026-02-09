@@ -7,6 +7,7 @@ import Incr_decrement from "./Incr_decrement"
 import List from "./List";
 import ListItem from "./ListItem";
 import Searching from "./Searching";
+import Dashboard from "./Dashboard";
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
 
    
       {/* <Incr_decrement/> */}
-    <Searching/>
+    {/* <Searching/> */}
+    <Dashboard/>
     </>
   );
 }
