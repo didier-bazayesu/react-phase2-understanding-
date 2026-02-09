@@ -8,6 +8,7 @@ import List from "./List";
 import ListItem from "./ListItem";
 import Searching from "./Searching";
 import Dashboard from "./Dashboard";
+import ColorPicker from "./ColorPicker";
 
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
    
       {/* <Incr_decrement/> */}
     {/* <Searching/> */}
-    <Dashboard/>
+    {/* <Dashboard/> */}
+    <ColorPicker/>
     </>
   );
 }
