@@ -24,6 +24,21 @@ function Car() {
 
                 {/* //model */}
 
+          <input type="text" name="" id="" value={car.model} onChange={(e) => {
+              setCar(obj=>({              
+                      ...obj,
+                      model: e.target.value 
+              }))
+          }} />
+
+     {/* cost */}
+
+          <input type="text" name="" id="" value={car.cost} onChange={(e) => {
+              setCar(obj => ({
+                  ...obj,
+                  cost: e.target.value
+              }))
+          }} />
 
     </div>
   )
