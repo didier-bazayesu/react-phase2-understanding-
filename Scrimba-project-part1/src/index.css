@@ -4,6 +4,7 @@ body{
     margin: 0px;
     background-color: #282d35;
     color: white;
+   
 }
 nav {
     display: flex;
@@ -27,10 +28,10 @@ main{
     padding: 60px 30px;
     background-image: url(./image/react.svg);
     background-repeat: no-repeat;
-    background-position-x:13%;
-       background-position-y:center;
+    background-position-x:103%;
+       background-position-y:bottom;
     background-size: 100px;
-    background-origin: border-box;
+   
     
 }
 main > h1 {   
@@ -46,10 +47,11 @@ main > h1 {
    
 }
 .fan-facts>li::marker{
-    color: red;
+    color: green;
     font-size: 2rem;
 
 }
 /* .backgroun-image{
     background-color: ;
 } */
+ 
