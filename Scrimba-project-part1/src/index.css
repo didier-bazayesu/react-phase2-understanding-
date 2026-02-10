@@ -1,27 +1,55 @@
-.handle-react-logo{
-    
-    background-color: #21222a;
-}
 
-.handle-ul-listItem::marker{
- color: green;
-}
-.background-App{
+
+body{
+    margin: 0px;
     background-color: #282d35;
-    padding: 20px;
-    width: 400px;
-    height: 350px;
-    border-radius: 5px;
-
-    
-
-
-}
-.background-dev{
     color: white;
 }
-.handle-padding{
-    padding: 20px;
+nav {
     display: flex;
-color: #5bcae9;
+    align-items: center;
+    height: 100%;
+    
 }
+header{
+    height: 90px;
+    background-color:#21222A ;
+    padding-left: 30px;
+}
+nav > img {
+    width: 40px;
+    
+    
+
+}
+
+main{
+    padding: 60px 30px;
+    background-image: url(./image/react.svg);
+    background-repeat: no-repeat;
+    background-position-x:13%;
+       background-position-y:center;
+    background-size: 100px;
+    background-origin: border-box;
+    
+}
+main > h1 {   
+    margin: 0px;
+}
+.fan-facts{
+    margin-top: 46px;
+    max-width: 400px;
+}
+.fan-facts > li {
+    margin-block: 10px;
+    line-height: 19px;
+   
+}
+.fan-facts>li::marker{
+    color: red;
+    font-size: 2rem;
+
+}
+/* .backgroun-image{
+    background-color: ;
+} */
