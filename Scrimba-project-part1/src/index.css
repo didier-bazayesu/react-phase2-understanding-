@@ -1,0 +1,27 @@
+.handle-react-logo{
+    
+    background-color: #21222a;
+}
+
+.handle-ul-listItem::marker{
+ color: green;
+}
+.background-App{
+    background-color: #282d35;
+    padding: 20px;
+    width: 400px;
+    height: 350px;
+    border-radius: 5px;
+
+    
+
+
+}
+.background-dev{
+    color: white;
+}
+.handle-padding{
+    padding: 20px;
+    display: flex;
+color: #5bcae9;
+}
