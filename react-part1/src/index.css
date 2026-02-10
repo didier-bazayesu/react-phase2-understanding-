@@ -1,0 +1,27 @@
+.design-dev{
+  background-color: grey;
+   font-weight: bold;
+   size: 20px;
+   padding-top: 30px;
+}
+.handle-loading{
+  color: red;
+  size: 45px;
+}
+
+.size{
+  
+  font-weight: bold;
+  
+  
+
+}
+.blue{
+  color: blue;
+}
+.red{
+  color: red;
+}
+.black{
+  color: black;
+}
