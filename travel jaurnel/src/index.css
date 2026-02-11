@@ -1,0 +1,18 @@
+header{
+  background-color: #F55A5A;
+  display: flex;
+  justify-content: center;
+  color: white;
+   
+}
+
+header > img{
+  width: 40px;
+}
+
+header > h1.handle-size{
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
