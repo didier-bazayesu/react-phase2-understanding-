@@ -1,13 +1,14 @@
-import React from 'react'
+
 import HeaderJaurnel from './components/HeaderJaurnel'
-import Entry from './components/Entry'
+
+import HandleEntry from './components/HandleEntry'
 
 function App() {
   return (
      <>
         <HeaderJaurnel/>
-        <Entry/> 
-     </>
+        <HandleEntry/>
+      </>
   )
 }
 
