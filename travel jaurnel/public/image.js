@@ -1,5 +1,5 @@
 
-export const img = '/globe-solid-full.svg';
+export const img = 'images/globe-solid-full.svg';
 export const travelImage1 = "/images/travel_image1.jpg"
 export const travelImage2 = "/images/navigation_arrow_red.png"
 export const travelImage3 = "/images/travelImage3.jpeg"
