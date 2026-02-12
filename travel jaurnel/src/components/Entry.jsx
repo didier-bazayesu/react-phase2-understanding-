@@ -11,7 +11,7 @@ function Entry({values}) {
         <div >
          <img src={travelImage2} alt="marker icon" className='google-image-locator'  />
       
-        <bold>{values.countryName}</bold>
+        <span className='handle-font-color'>{values.countryName}</span>
           <a href={values.googleMap}>View on Google Maps
           </a>
 
