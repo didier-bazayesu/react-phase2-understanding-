@@ -13,16 +13,34 @@ function HeaderIncredient() {
       //taking input value
       let[inputvalue,setinputValue] = useState("")
 
+      //handle input value 
+      function handleInputValue (e){  
+
+        /*This is another way of handling input form */
+
+        // const formData = new FormData();
+        // const dataInputed = formData.get("current-igredient")  
+        //       setinputValue(dataInputed);
+        setinputValue(e.target.value);
+      }
+
+
+
       //taking incredients from the user input
     function takeIncredient(event){
         event.preventDefault();
-           setincredient((array)=>([
-            ...array,
-            inputvalue.trim()
+
+        //checking if we have typed something 
+        if(!inputvalue.length<1) {
+            setincredient((array)=>([
+             ...array,
+             inputvalue.trim()
+                
+                
+               ]))
+               setinputValue("");
             
-            
-           ]))
-           setinputValue("");
+        }
     }
 
     //delete the specific incredients
@@ -41,13 +59,13 @@ function HeaderIncredient() {
         <div className='flex flex-row justify-center '>
 
             <main>
-                <form action="" className='flex justify-center gap-5 p-10 '>
+                  <form action="" className='flex justify-center gap-5 p-10 ' onSubmit={takeIncredient}>
                     <input type="text"
                     value={inputvalue}
                     id='value'
-                    onChange={(e)=>{
-                           setinputValue(e.target.value);
-                    }}
+                    name='current-ingredient'
+                    
+                    onChange={handleInputValue}
                     placeholder='type Incredient ...'
                           className='  flex-1 border border-gray-300 rounded-lg px-4 py-2 
                        focus:outline-none focus:ring-2 focus:ring-gray-500 ' 
@@ -55,13 +73,15 @@ function HeaderIncredient() {
                     
                     />
                     
-                <button  className='text-white bg-black p-2 font-bold rounded-[3px]  cursor-pointer hover:text-amber-300 hover:bg-green-600' onClick={takeIncredient}>+Add incredient</button>
+                <button  className='text-white bg-black p-2 font-bold rounded-[3px]  cursor-pointer hover:text-amber-300 hover:bg-green-600'  type='submit'>+Add incredient</button>
                 </form>
 
             </main>
 
 
         </div>
+             
+             <h2 className='text-2xl  font-extrabold '> Incredient on hand :</h2>
 
             <ul className=' items-center  mx-auto w-sm rounded-[5px]  shadow-sm bg-green-500 p-5 text-left '>
               {ingredient.map((elem, index) => <li key={index} >🥣{elem} 
