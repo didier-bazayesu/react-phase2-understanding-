@@ -1,4 +1,4 @@
-import { travelImage1, travelImage2, travelImage3, travelImage4, travelImage5 } from "../../public/image";
+import { travelImage1,travelImage3, travelImage4, travelImage5 } from "../../public/image";
 
 const   entryData = [
     {
