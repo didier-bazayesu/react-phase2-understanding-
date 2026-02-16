@@ -12,6 +12,7 @@ import ColorPicker from "./ColorPicker";
 import Car from "./Car";
 import DashboardOrder from "./DashboardOrder";
 import EmploymentStatus from "./EmploymentStatus";
+import HideParagraph from "./HideParagraph";
 
 function App() {
 
@@ -21,7 +22,8 @@ function App() {
   
   return (
     <>
-    <EmploymentStatus/>
+    <EmploymentStatus/> <br /> <br />
+    <HideParagraph/>
     </>
   );
 }

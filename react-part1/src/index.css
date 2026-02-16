@@ -44,3 +44,13 @@ fieldset>label:hover{
   background-color: gray;
   color: white;
 }
+
+.handle-answer{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}

@@ -127,14 +127,15 @@ function EmploymentStatus() {
             <h1>{select}</h1>
             <label htmlFor="favColor">What is your favorite color?</label>
             <select id="favColor" onChange={handleSelect}>
-                <option>Red</option>
+                <option value="" disabled>-- Choose a color --</option>
+                <option >Red</option>
                 <option>Orange</option>
                 <option>Yellow</option>
                 <option>Green</option>
                 <option>Blue</option>
                 <option>Indigo</option>
                 <option>Violet</option>
-            </select> 
+            </select>
 
         </>
     )
