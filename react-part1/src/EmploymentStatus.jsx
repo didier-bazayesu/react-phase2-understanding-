@@ -123,7 +123,7 @@ function EmploymentStatus() {
             </fieldset>
 
 
-            {/* learning how to use select input  <br /> <br /> <br /> <br />
+            {/* learning how to use select input  <br /> <br /> <br /> <br />*/}
             <h1>{select}</h1>
             <label htmlFor="favColor">What is your favorite color?</label>
             <select id="favColor" onChange={handleSelect}>
@@ -134,7 +134,7 @@ function EmploymentStatus() {
                 <option>Blue</option>
                 <option>Indigo</option>
                 <option>Violet</option>
-            </select> */}
+            </select> 
 
         </>
     )
