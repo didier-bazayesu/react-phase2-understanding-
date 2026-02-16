@@ -40,3 +40,7 @@ fieldset > label{
 fieldset>label:hover{
   cursor: pointer;
 }
+.change-legend-color{
+  background-color: gray;
+  color: white;
+}
