@@ -11,7 +11,7 @@ import Dashboard from "./Dashboard";
 import ColorPicker from "./ColorPicker";
 import Car from "./Car";
 import DashboardOrder from "./DashboardOrder";
-
+import EmploymentStatus from "./EmploymentStatus";
 
 function App() {
 
@@ -21,18 +21,7 @@ function App() {
   
   return (
     <>
-   
-     <SampleFetching/> 
-     {/* <ListItem/> */}
-
-   
-      {/* <Incr_decrement/> */}
-    {/* <Searching/> */}
-    {/* <Dashboard/> */}
-    <ColorPicker/>
-
-    {/* <Car/> */}
-    <DashboardOrder/>
+    <EmploymentStatus/>
     </>
   );
 }

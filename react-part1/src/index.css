@@ -25,3 +25,18 @@
 .black{
   color: black;
 }
+
+fieldset{
+  padding: 5px;
+  border: solid 2px grey;
+  box-shadow: 4px 4px 4px 4px rebeccapurple;
+  border-radius: 5px;
+}
+fieldset > label{
+  font-weight: bold;
+  
+  
+}
+fieldset>label:hover{
+  cursor: pointer;
+}
