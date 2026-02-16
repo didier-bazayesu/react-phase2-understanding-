@@ -76,13 +76,13 @@ function EmploymentStatus() {
             </fieldset>
             <br /><br /><br />
 
-            {/* <div>
+            <div>
                 <ul>
                     {favorite.map((elem, index) => <li key={index}>{elem}</li>)}
                 </ul>
 
-            </div> */}
-            {/* <fieldset>
+            </div>
+            <fieldset>
                 <legend className='change-legend-color'>Select your favorites things</legend>
                 <label htmlFor="Option1">
                     <input
@@ -120,7 +120,7 @@ function EmploymentStatus() {
                     Drama
                 </label>
 
-            </fieldset> */}
+            </fieldset>
 
 
             {/* learning how to use select input  <br /> <br /> <br /> <br />
